@@ -18,7 +18,7 @@ public class MoviesApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
-						.allowedOrigins("*")
+						.allowedOrigins("localhost:8080")
 						.allowedMethods("*")
 						.allowedHeaders("*")
 						.allowCredentials(false).maxAge(3600);
